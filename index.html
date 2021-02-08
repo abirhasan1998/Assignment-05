@@ -10,36 +10,45 @@
 </head>
 
 <body>
-<header>
-    <div class="company-name">
-        <h1>Hungry Monster</h1>
-    </div>
-    <nav>
-        <ul>
-            <li> <a href="">Home</a> </li>
-            <li> <a href="">About</a> </li>
-            <li> <a href=""> Recipes</a></li>
-            <li><a href="">Blog</a> </li>
+    <!-- *****************Navigation Bar Section***************** -->
+    <header>
+        <div class="company-name">
+            <h1>Hungry Monster</h1>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href=""><strong>Home</strong></a></li>
+                <li> <a href=""><strong>About</strong></a></li>
+                <li> <a href=""><strong>Recipes</strong></a></li>
+                <li><a href=""><strong>Blog</strong></a></li>
 
-        </ul>
-    </nav>
-</header>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- *****************Search area Section***************** -->
     <main id="main-area">
         <div class="search-area">
             <input id="search-field" type="text" placeholder="Want a Meal? Search Here!!!">
-            <button id="search-button">Search</button>
+            <button id="search-button"><strong>Search</strong></button>
         </div>
 
-        <div id="ingredients"> </div>
+        <!-- *****************Ingredients Show Section***************** -->
+        <div id="ingredients">
+        </div>
 
-        <div class="meal-container" id="allMeal"> </div>
-
+        <!-- *****************Ingredients Show Section***************** -->
+        <div class="meal-container" id="allMeal">
+        </div>
+        <!-- *****************Error Show Section***************** -->
         <div id="no-meal-found">
             <h1>Sorry This Item is Not Found!!!! Please Try Again With Alphabet....</h1>
         </div>
     </main>
-
+    
+    <!-- *****************Script Section***************** -->
     <script src="script.js"></script>
+    
 </body>
 
 </html>

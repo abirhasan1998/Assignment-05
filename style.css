@@ -1,46 +1,53 @@
 body {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     background: whitesmoke;
 }
+
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    width:80%;
+    margin:0px auto; 
+}
+
 img {
     width: 100%;
     height: auto;
 }
-header{
-    width:80%;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-}
-.company-name h1{
-    color:rgb(11, 11, 100);
-}
+
 nav ul{
     list-style:none;
     display: flex;
     column-gap: 30px;
 }
+
 a{
     text-decoration: none;
-    color:rgb(11, 11, 100);
+    color:black;
+}
+
+.company-name h1{
+    color:goldenrod;
+}
+
+.search-area {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 100px;
 }
 
 #main-area {
     width: 80%;
-    margin: 0 auto;
+    margin: 0px auto;
     height: 100vh;
-}
-.search-area {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 80px;
 }
 
 .search-area input {
@@ -48,17 +55,27 @@ a{
     height: 40px;
     border: none;
     border-radius: 5px;
-    outline: 1px solid blue;
+    outline: 5px solid yellow;
     padding-left: 15px;
 }
 .search-area button {
-    height: 42px;
+    height: 45px;
     outline: none;
     margin-left: -5px;
     width: 70px;
     font-size: 13px;
-    background: rgb(11, 11, 100);;
-    color: white;
+    background: red;
+    color:black;
+    cursor: pointer;
+}
+
+.meal {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgba(179, 168, 168, 0.575);
+    border-radius: 25px;
     cursor: pointer;
 }
 
@@ -69,25 +86,18 @@ a{
     row-gap: 50px;
     margin-top: 50px;
 }
-.meal {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 1px solid rgba(179, 168, 168, 0.575);
-    border-radius: 25px;
-    cursor: pointer;
 
-}
 .meal h3 {
     background: white;
     padding: 10px 0px;
 }
+
 #no-meal-found {
     width: 100%;
     text-align: center;
     display: none;
 }
+
 #ingredients {
     width: 50%;
     margin: 30px auto;
@@ -95,27 +105,27 @@ a{
     padding-bottom: 20px;
     display: none;
 }
-#ingredients img {
-    width: 100%;
-    height: auto;
 
-}
-
-#ingredients h1,
-h3 {
+#ingredients h1, h3 {
     padding-left: 15px;
     margin-top: 20px;
 }
 
+#ingredients img {
+    width: 100%;
+    height: auto;
+}
+
 #ingredients h3 {
-    margin: 10px 0;
+    margin: 10px 0px;
+}
+
+#ingredients ul {
+    margin-left: 30px;
 }
 
 #ingredients ul li {
     padding-left: 0px;
     font-size: 18px;
     margin-top: 7px;
-}
-#ingredients ul {
-    margin-left: 30px;
 }
